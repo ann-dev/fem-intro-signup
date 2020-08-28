@@ -1,0 +1,16 @@
+.App {
+    text-align: center;
+}
+.attribution {
+    font-size: 11px;
+    text-align: center;
+}
+.attribution a:hover {
+    color: #61dafb;
+}
+
+input,
+button {
+    display: block;
+    margin: 10px auto;
+}
