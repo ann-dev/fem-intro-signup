@@ -1,0 +1,44 @@
+.button {
+    background-color: hsl(154, 59%, 51%);
+    border: none;
+    border-radius: 8px;
+    color: white;
+    display: block;
+    font-size: 1rem;
+    font-family: Poppins, sans-serif;
+    position: relative;
+    padding: 15px 35px;
+    width: 100%;
+
+    &:hover {
+        cursor: pointer;
+    }
+
+    &:before {
+        border-radius: 8px;
+        box-shadow: 0 4px 0 #30b87d;
+        mix-blend-mode: multiply;
+        content: "";
+        height: 100%;
+        left: 0;
+        top: 0;
+        position: absolute;
+        width: 100%;
+        //background-blend-mode: multiply;
+    }
+
+    span {
+        font-weight: 600;
+    }
+
+    &--cta {
+        background-color: hsl(248, 32%, 49%);
+        border-radius: 12px;
+        font-size: 1rem;
+        padding: 20px 50px;
+        &:before {
+            border-radius: 12px;
+            box-shadow: 0 8px 0 hsla(249, 10%, 26%, 0.18);
+        }
+    }
+}

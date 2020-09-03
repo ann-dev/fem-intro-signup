@@ -1,0 +1,14 @@
+.input {
+    &__field {
+        border: 1px solid hsla(246, 25%, 77%, .5);
+        border-radius: 7px;
+        margin-bottom: 17px;
+        padding: 20px 20px;
+        position: relative;
+        width: 100%;
+        &::placeholder {
+            font-size: .9rem;
+            font-weight: 700;
+        }
+    }
+}
