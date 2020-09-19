@@ -1,22 +1,27 @@
+@import "../../../assets/scss/variables.scss";
+@import "../../../assets/scss/mixins.scss";
+
 .button {
-    background-color: hsl(154, 59%, 51%);
+    background-color: $green;
     border: none;
     border-radius: 8px;
-    color: white;
+    color: $white;
     display: block;
     font-size: 1rem;
-    font-family: Poppins, sans-serif;
+    font-family: $font-family-main;
     position: relative;
     padding: 15px 35px;
     width: 100%;
 
+
     &:hover {
+        background-color: $green-hover;
         cursor: pointer;
     }
 
     &:before {
         border-radius: 8px;
-        box-shadow: 0 4px 0 #30b87d;
+        box-shadow: 0 4px 0 $green-shadow;
         mix-blend-mode: multiply;
         content: "";
         height: 100%;
@@ -32,13 +37,19 @@
     }
 
     &--cta {
-        background-color: hsl(248, 32%, 49%);
+        background-color: $blue;
         border-radius: 12px;
         font-size: 1rem;
         padding: 20px 50px;
+        @include desktop {
+            padding: 20px 35px;
+        }
         &:before {
             border-radius: 12px;
             box-shadow: 0 8px 0 hsla(249, 10%, 26%, 0.18);
+        }
+        &:hover {
+            background-color: $blue-hover;
         }
     }
 }

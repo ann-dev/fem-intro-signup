@@ -1,0 +1,22 @@
+@import "../../assets/scss/mixins.scss";
+
+.article {
+    margin: 5.5rem auto 0;
+    @include desktop {
+        flex: 1;
+        margin-top: 0;
+        text-align: left;
+    }
+
+    &__header {
+        font-size: 1.7rem;
+        font-weight: 700;
+        line-height: 1.3em;
+        margin-bottom: 20px;
+        @include desktop {
+            font-size: 3rem;
+            line-height: 1.15em;
+            margin-bottom: 25px;
+        }
+    }
+}

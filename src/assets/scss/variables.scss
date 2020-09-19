@@ -1,0 +1,24 @@
+/* I. COLORS
+   ========================================================================== */
+// PRIMARY
+$blue: hsl(248, 32%, 49%);
+$red: hsl(0, 100%, 74%);
+$green: hsl(154, 59%, 51%);
+$white: hsl(0, 0%, 100%);
+
+// ON-HOVER
+$blue-hover: hsl(248, 32%, 60%);
+$green-hover: hsl(154, 59%, 66%);
+
+//SHADOWS
+$green-shadow: hsl(154, 59%, 45%);
+
+//NEUTRAL
+$dark-blue: hsl(249, 10%, 26%);
+$grayish-blue: hsl(246, 25%, 77%);
+
+/* II. FONTS
+      ========================================================================== */
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap");
+$font-size-main: 16px;
+$font-family-main: "Poppins", sans-serif;

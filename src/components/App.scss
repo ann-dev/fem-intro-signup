@@ -1,0 +1,31 @@
+@import "../assets/scss/mixins.scss";
+@import "../assets/scss/variables.scss";
+
+.app {
+    align-items: center;
+    background-color: $red;
+    background-image: url("../assets/images/bg-intro-mobile.png");
+    background-size: 100%;
+    background-repeat: no-repeat;
+    color: $white;
+    display: flex;
+    flex-wrap: wrap;
+    font-family: $font-family-main;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    min-height: 100vh;
+    padding: 0 1.5rem;
+    text-align: center;
+    @include desktop {
+        background-image: url("../assets/images/bg-intro-desktop.png");
+        flex-direction: row;
+        flex-wrap: nowrap;
+        justify-content: center;
+        padding: 0 10.3rem;
+    }
+}
+
+input,
+button {
+    display: block;
+}
