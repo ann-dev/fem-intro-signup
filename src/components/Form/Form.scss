@@ -3,6 +3,12 @@
 
 .form {
     margin: 4rem auto 2rem;
+    @include tablet_portrait {
+        margin-top: 0;
+    }
+    @include tablet_landscape {
+        margin-left: 3rem;
+    }
     @include desktop {
         flex: 1;
         margin-left: 2rem;
