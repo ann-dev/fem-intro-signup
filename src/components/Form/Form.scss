@@ -11,7 +11,7 @@
     }
     @include desktop {
         flex: 1;
-        margin-left: 2rem;
+        margin-left: 4rem;
         margin-top: 5rem;
         max-width: 33.75rem;
     }
@@ -26,7 +26,6 @@
             margin-top: 1.5rem;
             padding: 2.5rem 2.5rem 2rem;
         }
-
         &:before {
             box-shadow: 0 9px 0 hsla(249, 10%, 26%, 0.18);
             border-radius: 10px;
@@ -39,7 +38,10 @@
             width: 100%;
         }
     }
-
+    &__item {
+        margin-bottom: 17px;
+        text-align: right;
+    }
     &__consent {
         color: $grayish-blue;
         font-size: 0.7rem;
@@ -47,9 +49,15 @@
         margin-top: 0.95rem;
         padding: 0 0.95rem;
     }
-
     &__consent--emphasis {
         color: $red;
         font-weight: 700;
     }
+}
+
+.text-error {
+    color: $red;
+    font-size: 0.75rem;
+    font-style: italic;
+    font-weight: 500;
 }

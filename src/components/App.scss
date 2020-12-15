@@ -5,7 +5,7 @@
     align-items: center;
     background-color: $red;
     background-image: url("../assets/images/bg-intro-mobile.png");
-    background-size: 100%;
+    background-size: cover;
     background-repeat: no-repeat;
     color: $white;
     display: flex;
@@ -17,9 +17,11 @@
     padding: 0 1.5rem;
     text-align: center;
     @include tablet_portrait {
+        background-image: url("../assets/images/bg-intro-desktop.png");
         padding: 0 5rem;
     }
     @include tablet_landscape {
+        background-image: url("../assets/images/bg-intro-desktop.png");
         flex-direction: row;
         flex-wrap: nowrap;
         justify-content: center;
@@ -30,7 +32,7 @@
         flex-direction: row;
         flex-wrap: nowrap;
         justify-content: center;
-        padding: 0 10.3rem;
+        padding: 0 15%;
     }
 }
 
