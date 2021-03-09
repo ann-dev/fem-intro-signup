@@ -6,7 +6,7 @@
 
 <p align="center">
   <img alt="last commit badge" src="https://img.shields.io/github/last-commit/ann-dev/fem-intro-signup?style=flat-square">
-  <img alt="code stack" src="https://img.shields.io/badge/tech_stack-React, SASS, Yarn-00ecfa.svg?style=flat-square">
+  <img alt="Netlify Status" src="https://api.netlify.com/api/v1/badges/2ce07534-abee-4094-894f-1212545b3c47/deploy-status" />
 </p>
 
 <p align="center">Responsive page design challenge: form signup component. <br />
