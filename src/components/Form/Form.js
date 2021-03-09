@@ -9,7 +9,10 @@ import "./Form.scss";
 
 const Form = () => {
     const { register, handleSubmit, errors } = useForm();
-    const onSubmit = (data) => console.log(data);
+    const onSubmit = (data) => {
+        console.log(data)
+        alert("Thank you for submitting!")
+    };
 
     return (
         <div className="form">

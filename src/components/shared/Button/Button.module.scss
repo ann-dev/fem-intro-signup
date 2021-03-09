@@ -40,9 +40,10 @@
         background-color: $blue;
         border-radius: 12px;
         font-size: 1rem;
-        padding: 20px 50px;
+        padding: 1.1rem 2.8rem;
         @include desktop {
-            padding: 20px 35px;
+            font-size: .97rem;
+            padding: 1.1rem 1.95rem;
         }
         &:before {
             border-radius: 12px;

@@ -1,6 +1,6 @@
 # Frontend Mentor - Intro component with sign up form
 
-![Preview](https://github.com/ann-dev/fem-intro-signup/blob/master/design/preview-desktop-done.png)
+![Preview](./preview.jpg)
 
 <h3 align="center"><a href="https://fem-intro-signup.netlify.app/" target="_blank">✨ Live Demo</a></h3>
 
