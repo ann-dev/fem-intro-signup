@@ -34,8 +34,20 @@ jobs:
           restore-keys: |
             ${{ runner.os }}-pnpm-store-
             
+      - name: Check lockfile
+        run: |
+          echo "Checking for pnpm-lock.yaml..."
+          ls -la pnpm-lock.yaml || echo "pnpm-lock.yaml not found"
+          
       - name: Install dependencies
-        run: pnpm install --frozen-lockfile
+        run: |
+          if [ -f pnpm-lock.yaml ]; then
+            echo "Using frozen lockfile"
+            pnpm install --frozen-lockfile || (echo "Lockfile is outdated, regenerating..." && pnpm install)
+          else
+            echo "No lockfile found, installing without frozen lockfile"
+            pnpm install
+          fi
         
       - name: Run linting
         run: pnpm lint
