@@ -1,6 +1,6 @@
 {
   "name": "intro-signup",
-  "version": "0.1.0",
+  "version": "1.2.0",
   "private": true,
   "dependencies": {
     "@testing-library/jest-dom": "^4.2.4",
@@ -10,7 +10,7 @@
     "react": "^16.13.1",
     "react-dom": "^16.13.1",
     "react-hook-form": "^6.12.2",
-    "react-scripts": "^3.4.3"
+    "react-scripts": "^5.0.1"
   },
   "scripts": {
     "start": "react-scripts start",
@@ -34,6 +34,7 @@
     ]
   },
   "devDependencies": {
-    "node-sass": "^4.14.1"
+    "eslint": "^8.57.1",
+    "sass": "^1.91.0"
   }
 }
