@@ -1,23 +1,23 @@
 @mixin phone_landscape {
-    @media screen and (max-width: 812px) and (orientation: landscape) {
-        @content;
-    }
+  @media screen and (max-width: 812px) and (orientation: landscape) {
+    @content;
+  }
 }
 
 @mixin tablet_portrait {
-    @media screen and (min-width: 768px) and (max-width: 1024px) and (orientation: portrait) {
-        @content;
-    }
+  @media screen and (min-width: 768px) and (max-width: 1024px) and (orientation: portrait) {
+    @content;
+  }
 }
 
 @mixin tablet_landscape {
-    @media screen and (min-width: 1024px) and (max-width: 1366px) {
-        @content;
-    }
+  @media screen and (min-width: 1024px) and (max-width: 1366px) {
+    @content;
+  }
 }
 
 @mixin desktop {
-    @media screen and (min-width: 1367px) {
-        @content;
-    }
+  @media screen and (min-width: 1367px) {
+    @content;
+  }
 }

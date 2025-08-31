@@ -1,56 +1,55 @@
-@import "../../../assets/scss/variables.scss";
-@import "../../../assets/scss/mixins.scss";
+@use '../../../assets/scss/variables.scss';
+@use '../../../assets/scss/mixins.scss';
 
 .button {
-    background-color: $green;
-    border: none;
+  background-color: variables.$green;
+  border: none;
+  border-radius: 8px;
+  color: variables.$white;
+  display: block;
+  font-size: 1rem;
+  font-family: variables.$font-family-main;
+  position: relative;
+  padding: 15px 35px;
+  width: 100%;
+
+  &:hover {
+    background-color: variables.$green-hover;
+    cursor: pointer;
+  }
+
+  &:before {
     border-radius: 8px;
-    color: $white;
-    display: block;
-    font-size: 1rem;
-    font-family: $font-family-main;
-    position: relative;
-    padding: 15px 35px;
+    box-shadow: 0 4px 0 variables.$green-shadow;
+    mix-blend-mode: multiply;
+    content: '';
+    height: 100%;
+    left: 0;
+    top: 0;
+    position: absolute;
     width: 100%;
+    //background-blend-mode: multiply;
+  }
 
+  span {
+    font-weight: 600;
+  }
 
-    &:hover {
-        background-color: $green-hover;
-        cursor: pointer;
+  &--cta {
+    background-color: variables.$blue;
+    border-radius: 12px;
+    font-size: 1rem;
+    padding: 1.1rem 2.8rem;
+    @include mixins.desktop {
+      font-size: 0.97rem;
+      padding: 1.1rem 1.95rem;
     }
-
     &:before {
-        border-radius: 8px;
-        box-shadow: 0 4px 0 $green-shadow;
-        mix-blend-mode: multiply;
-        content: "";
-        height: 100%;
-        left: 0;
-        top: 0;
-        position: absolute;
-        width: 100%;
-        //background-blend-mode: multiply;
+      border-radius: 12px;
+      box-shadow: 0 8px 0 hsla(249, 10%, 26%, 0.18);
     }
-
-    span {
-        font-weight: 600;
+    &:hover {
+      background-color: variables.$blue-hover;
     }
-
-    &--cta {
-        background-color: $blue;
-        border-radius: 12px;
-        font-size: 1rem;
-        padding: 1.1rem 2.8rem;
-        @include desktop {
-            font-size: .97rem;
-            padding: 1.1rem 1.95rem;
-        }
-        &:before {
-            border-radius: 12px;
-            box-shadow: 0 8px 0 hsla(249, 10%, 26%, 0.18);
-        }
-        &:hover {
-            background-color: $blue-hover;
-        }
-    }
+  }
 }

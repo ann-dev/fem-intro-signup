@@ -1,67 +1,67 @@
-@import "../../assets/scss/variables.scss";
-@import "../../assets/scss/mixins.scss";
+@use '../../assets/scss/variables.scss';
+@use '../../assets/scss/mixins.scss';
 
 .form {
-    margin: 4rem auto 2rem;
-    @include tablet_portrait {
-        margin-top: 0;
-    }
-    @include tablet_landscape {
-        margin-left: 3rem;
-    }
-    @include desktop {
-        flex: 1;
-        margin-left: 2rem;
-        margin-top: 5.8rem;
-    }
+  margin: 4rem auto 2rem;
+  @include mixins.tablet_portrait {
+    margin-top: 0;
+  }
+  @include mixins.tablet_landscape {
+    margin-left: 3rem;
+  }
+  @include mixins.desktop {
+    flex: 1;
+    margin-left: 2rem;
+    margin-top: 5.8rem;
+  }
 
-    &__content {
-        background-color: $white;
-        border-radius: 10px;
-        margin: 1.8rem 0;
-        padding: 1.5rem;
-        position: relative;
-        @include desktop {
-            margin-top: 1.5rem;
-            padding: 1.2rem 2.5rem 2.7rem;
-        }
-        &:before {
-            box-shadow: 0 9px 0 hsla(249, 10%, 26%, 0.18);
-            border-radius: 10px;
-            mix-blend-mode: multiply;
-            content: "";
-            height: 100%;
-            left: 0;
-            top: 0;
-            position: absolute;
-            width: 100%;
-        }
+  &__content {
+    background-color: variables.$white;
+    border-radius: 10px;
+    margin: 1.8rem 0;
+    padding: 1.5rem;
+    position: relative;
+    @include mixins.desktop {
+      margin-top: 1.5rem;
+      padding: 1.2rem 2.5rem 2.7rem;
     }
-    &__item {
-        margin-bottom: 17px;
-        text-align: right;
+    &:before {
+      box-shadow: 0 9px 0 hsla(249, 10%, 26%, 0.18);
+      border-radius: 10px;
+      mix-blend-mode: multiply;
+      content: '';
+      height: 100%;
+      left: 0;
+      top: 0;
+      position: absolute;
+      width: 100%;
     }
-    &__consent {
-        color: $grayish-blue;
-        font-size: 0.7rem;
-        line-height: 1.3rem;
-        margin-top: 0.95rem;
-        padding: 0 0.95rem;
-    }
-    &__consent--emphasis {
-        color: $red;
-        font-weight: 700;
-    }
+  }
+  &__item {
+    margin-bottom: 17px;
+    text-align: right;
+  }
+  &__consent {
+    color: variables.$grayish-blue;
+    font-size: 0.7rem;
+    line-height: 1.3rem;
+    margin-top: 0.95rem;
+    padding: 0 0.95rem;
+  }
+  &__consent--emphasis {
+    color: variables.$red;
+    font-weight: 700;
+  }
 }
 
 .text-error {
-    color: $red;
-    font-size: 0.75rem;
-    font-style: italic;
-    font-weight: 500;
+  color: variables.$red;
+  font-size: 0.75rem;
+  font-style: italic;
+  font-weight: 500;
 }
 
 .input__error-icon {
-    position: absolute;
-    top: 0;
+  position: absolute;
+  top: 0;
 }
