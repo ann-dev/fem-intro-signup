@@ -1,35 +1,35 @@
-@use "../../assets/scss/mixins.scss";
+@use '../../assets/scss/mixins.scss';
 
 .article {
-    margin: 5.5rem auto 0;
+  margin: 5.5rem auto 0;
+  @include mixins.tablet_landscape {
+    flex: 1;
+    margin-top: 0;
+    text-align: left;
+  }
+  @include mixins.desktop {
+    flex: 1;
+    margin-top: 0;
+    text-align: left;
+    p {
+      line-height: 27px;
+    }
+  }
+
+  &__header {
+    font-size: 1.7rem;
+    font-weight: 700;
+    line-height: 1.3em;
+    margin-bottom: 20px;
     @include mixins.tablet_landscape {
-        flex: 1;
-        margin-top: 0;
-        text-align: left;
+      font-size: 2.5rem;
+      line-height: 1.15em;
+      margin-bottom: 25px;
     }
     @include mixins.desktop {
-        flex: 1;
-        margin-top: 0;
-        text-align: left;
-        p {
-            line-height: 27px;
-        }
+      font-size: 3rem;
+      line-height: 1.15em;
+      margin-bottom: 25px;
     }
-
-    &__header {
-        font-size: 1.7rem;
-        font-weight: 700;
-        line-height: 1.3em;
-        margin-bottom: 20px;
-        @include mixins.tablet_landscape {
-            font-size: 2.5rem;
-            line-height: 1.15em;
-            margin-bottom: 25px;
-        }
-        @include mixins.desktop {
-            font-size: 3rem;
-            line-height: 1.15em;
-            margin-bottom: 25px;
-        }
-    }
+  }
 }

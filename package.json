@@ -14,12 +14,15 @@
     "build": "vite build",
     "serve": "vite preview",
     "lint": "eslint src --ext .js,.jsx",
-    "lint:fix": "eslint src --ext .js,.jsx --fix"
+    "lint:fix": "eslint src --ext .js,.jsx --fix",
+    "format": "prettier --write \"src/**/*.{js,jsx,scss,css,json}\"",
+    "format:check": "prettier --check \"src/**/*.{js,jsx,scss,css,json}\""
   },
   "devDependencies": {
     "@eslint/js": "^9.34.0",
     "@vitejs/plugin-react": "^5.0.2",
     "eslint": "^9.34.0",
+    "eslint-config-prettier": "^10.1.8",
     "eslint-plugin-react": "^7.37.5",
     "eslint-plugin-react-hooks": "^5.2.0",
     "globals": "^16.3.0",
