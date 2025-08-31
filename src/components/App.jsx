@@ -1,7 +1,7 @@
 import React from "react";
 import "./App.scss";
-import Article from "./Article/Article";
-import Form from "./Form/Form";
+import Article from "./Article/Article.jsx";
+import Form from "./Form/Form.jsx";
 
 const App = () => (
     <div className="app">

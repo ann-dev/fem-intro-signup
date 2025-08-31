@@ -1,27 +1,27 @@
-@import "../../assets/scss/variables.scss";
-@import "../../assets/scss/mixins.scss";
+@use "../../assets/scss/variables.scss";
+@use "../../assets/scss/mixins.scss";
 
 .form {
     margin: 4rem auto 2rem;
-    @include tablet_portrait {
+    @include mixins.tablet_portrait {
         margin-top: 0;
     }
-    @include tablet_landscape {
+    @include mixins.tablet_landscape {
         margin-left: 3rem;
     }
-    @include desktop {
+    @include mixins.desktop {
         flex: 1;
         margin-left: 2rem;
         margin-top: 5.8rem;
     }
 
     &__content {
-        background-color: $white;
+        background-color: variables.$white;
         border-radius: 10px;
         margin: 1.8rem 0;
         padding: 1.5rem;
         position: relative;
-        @include desktop {
+        @include mixins.desktop {
             margin-top: 1.5rem;
             padding: 1.2rem 2.5rem 2.7rem;
         }
@@ -42,20 +42,20 @@
         text-align: right;
     }
     &__consent {
-        color: $grayish-blue;
+        color: variables.$grayish-blue;
         font-size: 0.7rem;
         line-height: 1.3rem;
         margin-top: 0.95rem;
         padding: 0 0.95rem;
     }
     &__consent--emphasis {
-        color: $red;
+        color: variables.$red;
         font-weight: 700;
     }
 }
 
 .text-error {
-    color: $red;
+    color: variables.$red;
     font-size: 0.75rem;
     font-style: italic;
     font-weight: 500;

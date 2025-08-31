@@ -1,27 +1,27 @@
-@import "../../../assets/scss/variables.scss";
-@import "../../../assets/scss/mixins.scss";
+@use "../../../assets/scss/variables.scss";
+@use "../../../assets/scss/mixins.scss";
 
 .button {
-    background-color: $green;
+    background-color: variables.$green;
     border: none;
     border-radius: 8px;
-    color: $white;
+    color: variables.$white;
     display: block;
     font-size: 1rem;
-    font-family: $font-family-main;
+    font-family: variables.$font-family-main;
     position: relative;
     padding: 15px 35px;
     width: 100%;
 
 
     &:hover {
-        background-color: $green-hover;
+        background-color: variables.$green-hover;
         cursor: pointer;
     }
 
     &:before {
         border-radius: 8px;
-        box-shadow: 0 4px 0 $green-shadow;
+        box-shadow: 0 4px 0 variables.$green-shadow;
         mix-blend-mode: multiply;
         content: "";
         height: 100%;
@@ -37,11 +37,11 @@
     }
 
     &--cta {
-        background-color: $blue;
+        background-color: variables.$blue;
         border-radius: 12px;
         font-size: 1rem;
         padding: 1.1rem 2.8rem;
-        @include desktop {
+        @include mixins.desktop {
             font-size: .97rem;
             padding: 1.1rem 1.95rem;
         }
@@ -50,7 +50,7 @@
             box-shadow: 0 8px 0 hsla(249, 10%, 26%, 0.18);
         }
         &:hover {
-            background-color: $blue-hover;
+            background-color: variables.$blue-hover;
         }
     }
 }

@@ -1,17 +1,17 @@
-@import "../../../assets/scss/mixins.scss";
-@import "../../../assets/scss/variables.scss";
+@use "../../../assets/scss/mixins.scss";
+@use "../../../assets/scss/variables.scss";
 
 .input__field {
     border: 1px solid hsla(246, 25%, 77%, 0.5);
     border-radius: 6px;
-    color: $dark-blue;
+    color: variables.$dark-blue;
     font-size: 0.9rem;
     font-weight: 700;
     margin-top: 0.8rem;
     padding: 1.25rem;
     position: relative;
     width: 100%;
-    @include desktop {
+    @include mixins.desktop {
         margin-top: 1.3rem;
         padding: 1.125rem 1.25rem;
         padding-left: 1.8rem;
@@ -26,5 +26,5 @@
     background-image: url("../../../assets/images/icon-error.svg");
     background-position: calc(100% - 10px) center;
     background-repeat: no-repeat;
-    border: 2px solid $red;
+    border: 2px solid variables.$red;
 }

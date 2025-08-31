@@ -1,10 +1,10 @@
 import React from "react";
 import { useForm } from "react-hook-form";
 
-import Input from "../shared/Input/Input";
-import Button from "../shared/Button/Button";
+import Input from "../shared/Input/Input.jsx";
+import Button from "../shared/Button/Button.jsx";
 import { BUTTON_NAMES } from "../shared/Button/constants";
-import Attribution from "../Attribution/Attribution";
+import Attribution from "../Attribution/Attribution.jsx";
 import "./Form.scss";
 
 const Form = () => {

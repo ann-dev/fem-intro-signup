@@ -1,13 +1,13 @@
-@import "../../assets/scss/mixins.scss";
+@use "../../assets/scss/mixins.scss";
 
 .article {
     margin: 5.5rem auto 0;
-    @include tablet_landscape {
+    @include mixins.tablet_landscape {
         flex: 1;
         margin-top: 0;
         text-align: left;
     }
-    @include desktop {
+    @include mixins.desktop {
         flex: 1;
         margin-top: 0;
         text-align: left;
@@ -21,12 +21,12 @@
         font-weight: 700;
         line-height: 1.3em;
         margin-bottom: 20px;
-        @include tablet_landscape {
+        @include mixins.tablet_landscape {
             font-size: 2.5rem;
             line-height: 1.15em;
             margin-bottom: 25px;
         }
-        @include desktop {
+        @include mixins.desktop {
             font-size: 3rem;
             line-height: 1.15em;
             margin-bottom: 25px;
