@@ -8,7 +8,7 @@ import Attribution from "../Attribution/Attribution.jsx";
 import "./Form.scss";
 
 const Form = () => {
-    const { register, handleSubmit, errors } = useForm();
+    const { register, handleSubmit, formState: { errors } } = useForm();
     const onSubmit = (data) => {
         console.log(data)
         alert("Thank you for submitting!")
@@ -26,7 +26,7 @@ const Form = () => {
                             className={errors.name ? "input__field input-error" : "input__field"}
                             name="name"
                             placeholder={errors.name ? "" : "First Name"}
-                            register={register({
+                            register={register("name", {
                                 required: true,
                                 minLength: 2,
                                 maxLength: 20,
@@ -55,7 +55,7 @@ const Form = () => {
                             className={errors.surname ? "input__field input-error" : "input__field"}
                             name="surname"
                             placeholder={errors.surname ? "" : "Last Name"}
-                            register={register({
+                            register={register("surname", {
                                 required: true,
                                 minLength: 2,
                                 maxLength: 20,
@@ -85,7 +85,7 @@ const Form = () => {
                             name="email"
                             type="email"
                             placeholder={errors.email ? "" : "Email Address"}
-                            register={register({
+                            register={register("email", {
                                 required: true,
                                 pattern: /^([A-Za-z0-9_\-.+])+@([A-Za-z0-9_\-.])+\.([A-Za-z]{2,})$/,
                             })}
@@ -105,7 +105,7 @@ const Form = () => {
                             name="password"
                             type="password"
                             placeholder={errors.password ? "" : "Password"}
-                            register={register({
+                            register={register("password", {
                                 required: true,
                                 pattern: /^(?=.*[A-Za-z])(?=.*\d)(?=.*[@$!%*#?&])[A-Za-z\d@$!%*#?&]{8,}$/,
                             })}

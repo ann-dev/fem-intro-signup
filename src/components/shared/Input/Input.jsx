@@ -9,7 +9,7 @@ const Input = ({ className, type, name, placeholder, register }) => (
         id={name}
         name={name}
         placeholder={placeholder}
-        ref={register}
+        {...register}
     />
 );
 
